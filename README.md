@@ -70,6 +70,9 @@ Furthermore, if you want to try other settings, please see `train.py` for more d
 
 Some of the best results obtained from our experiemnts are given in folders `plots`, `plots_no_clinical`, `plots_no_Segmentation` and `logs`.
 
+The overall performance results in terms of AUC score of top 10 data augmentation techniques in the prediction of ALN status: DL-CNB+C model (N0 vs. N(+)) with VGG-16 with BN is displayed below. The labels on the right represent the AUC score on the test cohort, and the methods are sorted in descending order from the highest to the lowest AUC score.
+<img src="./images/aug.png">
+
 Image below shows the confusion matrix and the comparison of ROC curves between different classes when using DL-CNB+C model with VGG-16 BN for feature extraction in predicting N0, N+(1-2) and N+(>2) classes (0: N0, 1: N+(1-2), 2: N+(>2)).
 <img src="./images/test_roc_cm_2.png">
 
