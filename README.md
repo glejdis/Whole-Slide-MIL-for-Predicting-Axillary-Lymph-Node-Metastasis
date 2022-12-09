@@ -70,5 +70,10 @@ Furthermore, if you want to try other settings, please see `train.py` for more d
 
 Some of the best results obtained from our experiemnts are given in folders `plots`, `plots_no_clinical`, `plots_no_Segmentation` and `logs`.
 
+Image below shows the confusion matrix and the comparison of ROC curves between different classes when using DL-CNB+C model with VGG-16 BN for feature extraction in predicting N0, N+(1-2) and N+(>2) classes (0: N0, 1: N+(1-2), 2: N+(>2)).
+<img src="./images/test_roc_cm_2.png">
+
 Image below shows the confusion matrix (left) and the ROC curves (right) of DL-CNB+C model with VGG-13 BN for feature extraction without tumor segmentation in predicting N0 and N(+) classes in the test cohort (0: N0, 1: N(+)). 
 <img src="./images/test_roc_cm_13_nos.png">
+
+
