@@ -65,3 +65,6 @@ bash run_further_data_aug.sh ${experiment_index}
 ```
 
 Furthermore, if you want to try other settings, please see `train.py` for more details.
+
+
+Some of the best results obtained from our experiemnts are given in folders `plots`, `plots_no_clinical`, `plots_no_Segmentation` and `logs`.
