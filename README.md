@@ -34,6 +34,9 @@ cd code/dataset
 unzip paper_patches.zip
 ```
 
+Illustration of exemplary patches from each class of the BCNB dataset: 
+<img src="./images/classes.png">
+
 ## Training
 
 To train our models run the following:
