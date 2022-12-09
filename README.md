@@ -1,6 +1,6 @@
 # BREAST CANCER DETECTION IN CORE-NEEDLE BIOPSIES WITH NEURAL NETWORKS
 
-This repo is the official implementation of my paper "Breast cancer detection in core-needle biopsies with neural networks". 
+This repo is the official implementation of the paper "Breast Cancer Detection in Core-Needle Biopsies with Neural Networks". 
 
 ## Abstract
 
