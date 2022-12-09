@@ -35,7 +35,7 @@ unzip paper_patches.zip
 ```
 
 Illustration of exemplary patches from each class of the BCNB dataset: 
-<p align="center"><img src="./images/classes.png" align="center" width="800" ></p>
+<p align="center"><img src="./images/classes.png" align="center" width="500" ></p>
 
 ## Training
 
@@ -74,15 +74,15 @@ Furthermore, if you want to try other settings, please see `train.py` for more d
 Some of the best results obtained from our experiemnts are given in folders `plots`, `plots_no_clinical`, `plots_no_Segmentation` and `logs`.
 
 The overall performance results in terms of AUC score of top 10 data augmentation techniques in the prediction of ALN status: DL-CNB+C model (N0 vs. N(+)) with VGG-16 with BN is displayed below. The labels on the right represent the AUC score on the test cohort, and the methods are sorted in descending order from the highest to the lowest AUC score.
-<img src="./images/aug.png" align="center" width="800" align="center">
+<p align="center"><img src="./images/aug.png" width="800"></p>
 
 Image below displays the confusion matrix (left) and the ROC curves (right) of DL-CNB+C model with VGG-13 with BN for feature extraction in predicting N0 and N(+) classes in the test cohort (0: N0, 1: N(+)).
-<img src="./images/test_vgg13bn_0.png" align="center">
+<p align="center"><img src="./images/test_vgg13bn_0.png" width="800"></p>
 Image below shows the confusion matrix (left) and the ROC curves (right) of DL-CNB+C model with VGG-13 BN for feature extraction without tumor segmentation in predicting N0 and N(+) classes in the test cohort (0: N0, 1: N(+)). 
-<img src="./images/test_roc_cm_13_nos.png" align="center">
+<p align="center"><img src="./images/test_roc_cm_13_nos.png" width="800"></p>
 
 Image below shows the confusion matrix and the comparison of ROC curves between different classes when using DL-CNB+C model with VGG-16 BN for feature extraction in predicting N0, N+(1-2) and N+(>2) classes (0: N0, 1: N+(1-2), 2: N+(>2)).
-<img src="./images/test_roc_cm_2.png" align="center">
+<p align="center"><img src="./images/test_roc_cm_2.png" width="800"></p>
 
 
 
