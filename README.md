@@ -35,7 +35,7 @@ unzip paper_patches.zip
 ```
 
 Illustration of exemplary patches from each class of the BCNB dataset: 
-<img src="./images/classes.png" align="center" width="800" >
+<p align="center"><img src="./images/classes.png" align="center" width="800" ></p>
 
 ## Training
 
