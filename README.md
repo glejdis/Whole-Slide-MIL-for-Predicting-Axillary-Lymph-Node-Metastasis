@@ -1,20 +1,17 @@
 # BREAST CANCER DETECTION IN CORE-NEEDLE BIOPSIES WITH NEURAL NETWORKS
-### Glejdis Shkembi
 
-This repo is the official implementation of my master thesis on "Breast cancer detection in core-needle biopsies with neural networks". 
+This repo is the official implementation of my paper "Breast cancer detection in core-needle biopsies with neural networks". 
 
 ## Abstract
 
-This project explores a new deep learning method to quantify clinical information from breast cancer core-needle biopsy histopathological image data. We  extend further on the attention-based multiple insatnce learning classification pipeline of [Xu et al. 2021](https://arxiv.org/abs/2112.02222).  Breast cancer has become the greatest threat to women's health worldwide. Clinically, identification of axillary lymph node (ALN) metastasis and other tumor clinical characteristics such as ER, PR, and so on, are important for evaluating the prognosis and guiding the treatment for breast cancer patients.
-        Here, we will make use of a publicly available dataset from 1058 patients that include annotations from two independent and experienced pathologists, which allows estimating aleatoric and epistemic uncertainties of the underlying data and newly developed machine learning models. 
-        Different baseline state-of-the-art deep learning models from the literature were developed to estimate the metastatic status of ALN, and subsequently, an extensive ablation study on different data augmentation techniques, including basic and advanced methods, was performed. Lastly, the tumor extraction and expert annotations were removed from the classification pipeline and the model performance was analyzed. The developed models were compared to the baseline by means of AUC, accuracy, F1-measure, F2-measure, sensitivity, specificity, PPV and NPV for diagnostic predictions.  
+Breast cancer (BC) has become the greatest threat to women's health worldwide. Clinically, identification of axillary lymph node (ALN) metastasis is important for evaluating prognosis and guiding  treatment. This paper aims at reproducing the results from \cite{Xu_2021}, and further extends their deep learning (DL) classification pipeline by quantifying clinical information from core-needle biopsy (CNB) images. We made use of a publicly available dataset of $1058$ patients. Different baseline state-of-the-art (SOTA) DL models were tested to estimate the metastatic status of ALNs. Subsequently, an extensive ablation study of different data augmentation techniques was performed. Lastly, tumor extraction and expert annotations were removed from the classification pipeline.  Our proposed model outperformed SOTA by $3.73$ $\%$. 
         
 ## Setup
 
 ### Clone this repo
 
 ```bash
-git clone https://github.com/glejdis/master_thesis.git
+git clone https://github.com/glejdis/CMT_code.git
 ```
 
 ### Environment
@@ -36,17 +33,6 @@ cd code/dataset
 # download paper_patches.zip
 unzip paper_patches.zip
 ```
-The dataset, named `original_WSI_patches`, to run the experiment without the tumor segmentation and annotaion step, can be found in the directory `/vol/datasets/BCNB_original` of the workstation and should be coppied/moved to `code/dataset`.
-
-Notice: the `my_json` folder is missing a file named `train.json`, due to the large size it could not be pushed in this repository. The file can be found in the directory `/vol/datasets/BCNB_original/my_json` of the workstation and should be coppied/moved to `code/dataset/my_json`.
-
-## Statistical Analysis
-
-To perform the statistcal analysis and fit the logistic regression model on the clinical dataset, run the jupyter notebooks from folder `statistical analysis` in the following order: 
-
-1. Clinical_data_preparation
-2. Logistic_regression
-3. Stat_analysis
 
 ## Training
 
@@ -71,13 +57,6 @@ cd code
 bash run_no_clinical.sh ${experiment_index}
 ```
 
-To run any experiment of the DLCNB with the clinical data without the segmentation step, you can do as this:
-
-```bash
-cd code
-bash run_NOS.sh ${experiment_index}
-```
-
 To run any experiment of the DLCNB with the clinical data and data augmentation strategies, you can do as this:
 
 ```bash
@@ -86,5 +65,3 @@ bash run_further_data_aug.sh ${experiment_index}
 ```
 
 Furthermore, if you want to try other settings, please see `train.py` for more details.
-
-Some of the best results obtained from our experiemnts are given in folders `plots`, `plots_no_clinical`, `plots_no_Segmentation` and `logs`.
