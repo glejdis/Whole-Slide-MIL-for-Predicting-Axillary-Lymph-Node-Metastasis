@@ -70,4 +70,4 @@ Furthermore, if you want to try other settings, please see `train.py` for more d
 
 Some of the best results obtained from our experiemnts are given in folders `plots`, `plots_no_clinical`, `plots_no_Segmentation` and `logs`.
 
-<img src="./images/test_roc_cm_13_nos.svg">
+<img src="./images/test_roc_cm_13_nos.png">
