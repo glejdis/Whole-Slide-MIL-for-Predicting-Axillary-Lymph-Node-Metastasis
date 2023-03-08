@@ -1,10 +1,10 @@
 # Whole-slide Multiple Instance Learning for Predicting Axillary Lymph Node Metastases
 
-This repo is the official implementation of the paper "Breast Cancer Detection in Core-Needle Biopsies with Neural Networks". 
+This repo is the official implementation of the paper "Whole-slide Multiple Instance Learning for Predicting Axillary Lymph Node Metastases". 
 
 ## Abstract
 
-Breast cancer has become the greatest threat to women's health worldwide. Clinically, identification of axillary lymph node (ALN) metastasis is important for evaluating prognosis and guiding  treatment. This paper aims at reproducing the results from [Xu et al. 2021](https://arxiv.org/abs/2112.02222), and further extends their deep learning classification pipeline by quantifying clinical information from core-needle biopsy images. We made use of a publicly available dataset of 1058 patients. Different baseline state-of-the-art deep learning models were tested to estimate the metastatic status of ALNs. Subsequently, an extensive ablation study of different data augmentation techniques was performed. Lastly, tumor extraction and expert annotations were removed from the classification pipeline.  Our proposed model outperformed SOTA by 3.73 %. 
+Breast cancer is a major concern for women's health globally, with axillary lymph node (ALN) metastasis identification being critical for prognosis evaluation and treatment guidance. This paper presents a deep learning (DL) classification pipeline for quantifying clinical information from digital core-needle biopsy (CNB) images, with fewer steps than existing methods. A publicly available dataset of 1058 patients was used to evaluate the performance of different baseline state-of-the-art (SOTA) DL models in classifying ALN metastatic status based on CNB images. An extensive ablation study of various data augmentation techniques was also conducted. Finally, the manual tumor segmentation and annotation step performed by the pathologists was assessed. Our proposed training scheme outperformed SOTA by 3.73\%.
         
 ## Setup
 
