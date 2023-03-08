@@ -1,4 +1,4 @@
-# BREAST CANCER DETECTION IN CORE-NEEDLE BIOPSIES WITH NEURAL NETWORKS
+# Whole-slide Multiple Instance Learning for Predicting Axillary Lymph Node Metastases
 
 This repo is the official implementation of the paper "Breast Cancer Detection in Core-Needle Biopsies with Neural Networks". 
 
