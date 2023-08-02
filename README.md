@@ -11,7 +11,7 @@ Breast cancer is a major concern for women's health globally, with axillary lymp
 ### Clone this repo
 
 ```bash
-git clone https://github.com/glejdis/CMT_code.git
+git clone https://github.com/glejdis/MICCAI_2023.git
 ```
 
 ### Environment
